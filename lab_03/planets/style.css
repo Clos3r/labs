@@ -1,0 +1,62 @@
+@media (min-width: 1600px) {
+    .flex-row {
+        display: flex;
+    }
+
+    .flex-row div {
+        width: 70%;
+    }
+
+    .flex-row img { 
+        width: 30%;
+
+    }
+}
+
+body{ 
+    background-color:#0a1223 ; 
+    color: white; 
+    margin: 10px;
+} 
+
+main { 
+    width: 90%; 
+    margin: 0 auto; 
+
+} 
+
+.col { 
+    width: 50%;
+}
+nav {
+    margin: 20px;
+    float: right;
+    margin: 0;
+    padding: 7px;
+    height: 20px;
+    line-height: 20px;
+    background: linear-gradient(45deg,pink,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+
+nav ul li{ 
+display:inline-block;
+}
+nav ul li a{
+    padding: 5px 7px 10px 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.reverse {
+    
+    flex-direction: row-reverse;
+}

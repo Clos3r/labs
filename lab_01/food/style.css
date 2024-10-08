@@ -1,0 +1,44 @@
+header {
+    background: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    vertical-align: middle;
+    padding: 100px;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    margin: 0 80px 80px 80px;
+}
+
+main {
+    padding: 25px 100px;
+    display: flex;
+}
+
+img{
+    width: 700px;;
+}
+
+h1{
+    text-align: left;
+}
+
+aside{
+    text-align: right;
+    img{
+        width: 450px;
+    }
+}
+
+button {
+    padding: 8px;
+    border-radius: 35px;
+    background: rgb(255, 255, 255);
+    border: 1px solid; color:red;
+    color: red;
+}   
