@@ -1,5 +1,5 @@
 https://clos3r.github.io/labs/lab_01/cars - car
-https://clos3r.github.io/labs/lab_01/apples - apple
+https://clos3r.github.io/labs/lab_01/apple - apple
 https://clos3r.github.io/labs/lab_01/kitchen - kitchen
 https://clos3r.github.io/labs/lab_02/ - lab_02
 https://clos3r.github.io/labs/lab_03/ - lab_03
