@@ -1,0 +1,13 @@
+https://clos3r.github.io/labs/lab_01/ - lab_01
+https://clos3r.github.io/labs/lab_01/ - lab_02
+https://clos3r.github.io/labs/lab_01/ - lab_03
+https://clos3r.github.io/labs/lab_01/ - lab_04
+https://clos3r.github.io/labs/lab_01/ - lab_05
+https://clos3r.github.io/labs/lab_01/ - lab_06
+https://clos3r.github.io/labs/lab_01/ - lab_07
+https://clos3r.github.io/labs/lab_01/ - lab_08
+https://clos3r.github.io/labs/lab_01/ - lab_09
+https://clos3r.github.io/labs/lab_01/ - lab_10
+https://clos3r.github.io/labs/lab_01/ - lab_11
+https://clos3r.github.io/labs/lab_01/ - lab_12
+https://clos3r.github.io/labs/lab_01/ - lab_13
