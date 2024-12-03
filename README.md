@@ -7,7 +7,7 @@ https://clos3r.github.io/labs/lab_04/museum - lab_04
 https://clos3r.github.io/labs/lab_05/ - lab_05
 https://clos3r.github.io/labs/lab_06/ - lab_06
 https://clos3r.github.io/labs/lab_07/ - lab_07
-https://clos3r.github.io/labs/lab_08/ file manager - lab_08
+https://clos3r.github.io/labs/lab_08/filemanager - lab_08
 https://clos3r.github.io/labs/lab_09/memory game - lab_09
 https://clos3r.github.io/labs/lab_10/ - lab_10
 https://clos3r.github.io/labs/lab_11/ - lab_11
