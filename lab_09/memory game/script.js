@@ -16,14 +16,14 @@ const gameBoard = document.getElementById('game-board');
 let flippedCards = [];
 let matchedPairs = 0;
 
-// Создаем карточки и добавляем их на поле
+
 function createBoard() {
 cardsArray.forEach((imgSrc) => {
     const card = document.createElement('div');
     card.classList.add('card');
     card.dataset.img = imgSrc;
     
-    // Создаем элемент <img> для каждой карточки, скрывая его изначально
+
     const img = document.createElement('img');
     img.src = imgSrc;
     img.style.display = 'none';
@@ -34,13 +34,13 @@ cardsArray.forEach((imgSrc) => {
 });
 }
 
-// Функция для переворачивания карточек
+
 function flipCard() {
 if (flippedCards.length === 2 || this.classList.contains('flipped')) return;
 
 this.classList.add('flipped');
 const img = this.querySelector('img');
-  img.style.display = 'block'; // Показываем изображение
+  img.style.display = 'block';
 flippedCards.push(this);
 
 if (flippedCards.length === 2) {
@@ -48,7 +48,7 @@ if (flippedCards.length === 2) {
 }
 }
 
-// Проверка на совпадение
+
 function checkForMatch() {
 const [card1, card2] = flippedCards;
 
@@ -57,7 +57,7 @@ if (card1.dataset.img === card2.dataset.img) {
     flippedCards = [];
 
     if (matchedPairs === cardsArray.length / 2) {
-    setTimeout(() => alert('Поздравляю, вы нашли все пары!'), 500);
+    setTimeout(() => alert('Congratulations,you won!'), 500);
     }
 } else {
     setTimeout(() => {
@@ -70,5 +70,5 @@ if (card1.dataset.img === card2.dataset.img) {
 }
 }
 
-// Запускаем создание игрового поля
+
 createBoard();
