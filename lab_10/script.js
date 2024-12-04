@@ -177,8 +177,7 @@ function showbmwInfo(bmwId, carIndex) {
         `;
         bmwInfo.style.display = "block";
 
-     
-        window.location.hash = `car${bmwId}`;
+        window.location.hash = `#car${carIndex}`;
     } else {
         console.error(`Data for BMW ID '${bmwId}' not found`);
     }
@@ -187,7 +186,6 @@ function showbmwInfo(bmwId, carIndex) {
 function closebmwInfo() {
     const bmwInfo = document.getElementById("bmwinfo");
     bmwInfo.style.display = "none";
-   
     window.location.hash = "";
 }
 
@@ -217,3 +215,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+window.location.hash = `#car${carIndex}`;
+
+const hash = window.location.hash;
+if (hash) {
+    const carIndex = parseInt(hash.replace('#car', '')) - 1;
+    const carKeys = Object.keys(bmw);
+    if (carIndex >= 0 && carIndex < carKeys.length) {
+        showbmwInfo(carKeys[carIndex], carIndex + 1);
+    }
+}
