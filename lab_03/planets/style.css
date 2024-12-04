@@ -1,20 +1,6 @@
-@media (min-width: 1600px) {
-    .flex-row {
-        display: flex;
-    }
 
-    .flex-row div {
-        width: 70%;
-    }
-
-    .flex-row img { 
-        width: 30%;
-
-    }
-}
-
-body{ 
-    background-color:#0a1223 ; 
+body { 
+    background-color: #0a1223; 
     color: white; 
     margin: 10px;
 } 
@@ -22,12 +8,26 @@ body{
 main { 
     width: 90%; 
     margin: 0 auto; 
-
 } 
 
-.col { 
-    width: 50%;
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.flex-row div {
+    width: 70%;
+}
+
+.flex-row img {
+    width: 30%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
 nav {
     margin: 20px;
     float: right;
@@ -35,15 +35,16 @@ nav {
     padding: 7px;
     height: 20px;
     line-height: 20px;
-    background: linear-gradient(45deg,pink,blue);
+    background: linear-gradient(45deg, pink, blue);
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent ;
+    -webkit-text-fill-color: transparent;
 }
 
-nav ul li{ 
-display:inline-block;
+nav ul li { 
+    display: inline-block;
 }
-nav ul li a{
+
+nav ul li a {
     padding: 5px 7px 10px 7px;
     font-size: 1em;
     font-weight: bold;
@@ -56,7 +57,36 @@ h1 {
 }
 
 
-.reverse {
-    
-    flex-direction: row-reverse;
+@media (max-width: 1024px) {
+    .flex-row div {
+        width: 60%;
+    }
+    .flex-row img {
+        width: 40%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column; 
+    }
+
+    .flex-row div,
+    .flex-row img {
+        width: 100%; 
+    }
+
+    .flex-row img {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block; 
+        text-align: center; 
+    }
+
+    nav ul li a {
+        font-size: 0.9em; 
+    }
 }
