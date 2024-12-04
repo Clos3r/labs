@@ -45,7 +45,7 @@ https://clos3r.github.io/labs/lab_10/ - lab_10
 
 
 
-https://clos3r.github.io/labs/lab_11/ - lab_11
+https://clos3r.github.io/labs/lab_11/login - lab_11
 
 
 
