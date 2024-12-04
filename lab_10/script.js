@@ -161,7 +161,7 @@ const bmw = {
     }
 };
 
-function showbmwInfo(bmwId) {
+function showbmwInfo(bmwId, carIndex) {
     const bmwInfo = document.getElementById("bmwinfo");
     const bmwContent = document.getElementById("bmw-content");
     const bmwData = bmw[bmwId];
@@ -176,6 +176,9 @@ function showbmwInfo(bmwId) {
             <p><strong>Acceleration 0-100:</strong> ${bmwData.details["Acceleration 0-100"]}</p>
         `;
         bmwInfo.style.display = "block";
+
+     
+        window.location.hash = `car${bmwId}`;
     } else {
         console.error(`Data for BMW ID '${bmwId}' not found`);
     }
@@ -184,13 +187,33 @@ function showbmwInfo(bmwId) {
 function closebmwInfo() {
     const bmwInfo = document.getElementById("bmwinfo");
     bmwInfo.style.display = "none";
+   
+    window.location.hash = "";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const hash = window.location.hash;
+    if (hash) {
+        const carIndex = parseInt(hash.replace('#car', '')) - 1; 
+        const carKeys = Object.keys(bmw);
+        if (carIndex >= 0 && carIndex < carKeys.length) {
+            showbmwInfo(carKeys[carIndex], carIndex + 1);
+        }
+    }
+
     const bmwInfo = document.getElementById("bmwinfo");
     if (bmwInfo) {
         bmwInfo.addEventListener("click", (event) => {
             if (event.target === bmwInfo) closebmwInfo();
         });
     }
+
+    const bmwButtons = document.querySelectorAll(".bmw-button");
+    bmwButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            const carKey = Object.keys(bmw)[index];
+            showbmwInfo(carKey, index + 1);
+        });
+    });
 });
