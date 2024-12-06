@@ -37,7 +37,7 @@ https://clos3r.github.io/labs/lab_07/ - lab_07
 https://clos3r.github.io/labs/lab_08/filemanager - lab_08
 
 
-https://clos3r.github.io/labs/lab_09/memorygame - lab_09
+https://clos3r.github.io/labs/lab_09/ - lab_09
 
 
 
