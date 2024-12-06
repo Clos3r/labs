@@ -9,7 +9,7 @@ https://clos3r.github.io/labs/lab_01/kitchen - kitchen
 
 
 
-https://clos3r.github.io/labs/lab_02/apples - apples
+https://clos3r.github.io/labs/lab_02/ - apples
 
 
 
