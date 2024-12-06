@@ -177,7 +177,7 @@ function showbmwInfo(bmwId, carIndex) {
         `;
         bmwInfo.style.display = "block";
 
-        window.location.hash = `#car${carIndex}`;
+        window.location.hash = `#car${bmwID}`;
     } else {
         console.error(`Data for BMW ID '${bmwId}' not found`);
     }
