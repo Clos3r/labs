@@ -177,10 +177,10 @@ function showbmwInfo(bmwId) {
         `;
         bmwInfo.style.display = "block";
 
-        
+       
         window.location.hash = `#${bmwId}`;
     } else {
-        console.error(`Data for BMW ID '${bmwId}' not found`);
+        console.error(`Дані для BMW ID '${bmwId}' не знайдено`);
     }
 }
 
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hash) {
         const carId = hash.replace('#', ''); 
         if (bmw[carId]) {
-            showbmwInfo(carId);
+            showbmwInfo(carId); 
         }
     }
 
@@ -208,16 +208,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const bmwButtons = document.querySelectorAll(".bmw-button");
     bmwButtons.forEach((button, index) => {
+        const carKey = Object.keys(bmw)[index];
         button.addEventListener("click", () => {
-            const carKey = Object.keys(bmw)[index];
-            showbmwInfo(carKey);
+            showbmwInfo(carKey); 
         });
     });
 });
 function closebmwInfo() {
     const bmwInfo = document.getElementById("bmwinfo");
     bmwInfo.style.display = "none";
-    window.location.hash = "";
+    window.location.hash = ""; 
 }
 window.location.hash = `#car${carIndex}`;
 
