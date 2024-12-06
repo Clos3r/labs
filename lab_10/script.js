@@ -218,11 +218,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.location.hash = `#car${carIndex}`;
 
-const hash = window.location.hash;
-if (hash) {
-    const carIndex = parseInt(hash.replace('#car', '')) - 1;
-    const carKeys = Object.keys(bmw);
-    if (carIndex >= 0 && carIndex < carKeys.length) {
-        showbmwInfo(carKeys[carIndex], carIndex + 1);
-    }
-}
