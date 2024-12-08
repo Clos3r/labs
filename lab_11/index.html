@@ -1,38 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main-container">
 
-<h2>Login Form</h2>
+    <div class="tag-container" id="tagContainer">
+        <div class="tag">Frontend <button class="remove-btn" onclick="removeTag(this)">X</button></div>
+        <div class="tag">CSS <button class="remove-btn" onclick="removeTag(this)">X</button></div>
+        <div class="tag">JavaScript <button class="remove-btn" onclick="removeTag(this)">X</button></div>
+        <span class="clear-btn" onclick="clearTags()">Clear</span>
+        </div>
+    <div>
+</div>
 
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="images/avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<div class="job-listings">
+    <div class="job-card">
+        <div class="company-logo"><img src="images/3.jfif" alt="Photosnap logo"></div>
+            <div class="job-info">
+                <div class="job-header">
+                    <span class="company-name">Photosnap</span>
+                    <span class="badge new">NEW!</span>
+                    <span class="badge featured">FEATURED</span>
+                </div>
+                <h2 class="job-title">Senior Frontend Developer</h2>
+                <div class="job-details">
+                    <span>1d ago</span>
+                    <span>•</span>
+                    <span>Full Time</span>
+                    <span>•</span>
+                    <span>USA only</span>
+                </div>
+            </div>
+            <div class="tag-container">
+                <div class="tag">Frontend</button></div>
+                <div class="tag">Senior</button></div>
+                <div class="tag">HTML</button></div>
+                <div class="tag">CSS</button></div>
+                <div class="tag">JavaScript</button></div>
+            </div>
+        </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+<div class="job-card">
+    <div class="company-logo"><img src="images/1.svg" alt="Manage logo"></div>
+        <div class="job-info">
+            <div class="job-header">
+                <span class="company-name">Manage</span>
+                <span class="badge new">NEW!</span>
+                <span class="badge featured">FEATURED</span>
+            </div>
+                <h2 class="job-title">Fullstack Developer</h2>
+                <div class="job-details">
+                    <span>1d ago</span>
+                    <span>•</span>
+                    <span>Part Time</span>
+                    <span>•</span>
+                    <span>Remote</span>
+                </div>
+            </div>
+            <div class="tag-container">
+                <div class="tag">Fullstack</button></div>
+                <div class="tag">Midweight</button></div>
+                <div class="tag">Python</button></div>
+                <div class="tag">React</button></div>
+            </div>
+        </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn" onclick="cancelForm()">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
 
-<script src="scripts.js"></script>
+<div class="job-card">
+    <div class="company-logo"><img src="images/2.webp" alt="Account logo"></div>
+        <div class="job-info">
+            <div class="job-header">
+                <span class="company-name">Account</span>
+                <span class="badge new">NEW!</span>
+                <span class="badge featured">FEATURED</span>
+            </div>
+                <h2 class="job-title">Junior Frontend Developer</h2>
+                <div class="job-details">
+                    <span>2d ago</span>
+                    <span>•</span>
+                    <span>Part Time</span>
+                    <span>•</span>
+                    <span>USA only</span>
+                </div>
+            </div>
+            <div class="tag-container">
+                <div class="tag">Frontend</button></div>
+                <div class="tag">Junior</button></div>
+                <div class="tag">React</button></div>
+                <div class="tag">Sass</button></div>
+                <div class="tag">JavaScript </button></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
